@@ -7,7 +7,7 @@ make_unique([],[]).
 make_unique([H|T],Y):-memberx(H,T),!,make_unique(T,Y).
 make_unique([H|T],[H|Y]):-make_unique(T,Y).
 
-%maxinlist(S,Is,L,W,T,Y,I) S gesuchte Wort, 
+%maxinlist(S,Is,L,W,T,Y,I) S searched Word, 
 %							Is Last Index,
 %							L Text, 
 %							W Wordbook, 
